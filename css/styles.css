@@ -49,3 +49,10 @@ body {
     color: gray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@media screen and (width <= 600px) {
+    .card {
+        width: 200px;
+        height: 350px;
+    }
+}
