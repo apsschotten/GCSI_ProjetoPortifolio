@@ -1,15 +1,14 @@
 body {
-    border: red, 2px, solid;
     height: 100%;
-    display: flex;
 
 }
 
 .card-container {
-    display: flexbox;
-    align-items: center;
-    border: black 2px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    justify-content: space-around;
     height: 100%;
+    width: 100%;
 }
 
 .card {
@@ -36,6 +35,11 @@ body {
     border-radius: 10px;
     width: 100%;
     height: auto;
+    transition: filter 0.5s;
+}
+
+.card:hover img {
+    filter: grayscale(0.4);
 }
 
 .card h1 {
@@ -53,7 +57,12 @@ body {
 .card p {
     color: white;
     font-family: 'Outfit', sans-serif;
-    overflow-y: scroll;
+    overflow-y:scroll;
+    height: 120px;
+}
+
+.card p::-webkit-scrollbar {
+    display: none;
 }
 
 @media screen and (width <=600px) {
