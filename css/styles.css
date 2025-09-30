@@ -2,13 +2,13 @@ body {
     border: red, 2px, solid;
     height: 100%;
     display: flex;
-    
+
 }
 
 .card-container {
     display: flexbox;
     align-items: center;
-    border:black 2px solid;
+    border: black 2px solid;
     height: 100%;
 }
 
@@ -50,7 +50,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media screen and (width <= 600px) {
+.card p {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    overflow-y: scroll;
+}
+
+@media screen and (width <=600px) {
     .card {
         width: 200px;
         height: 350px;
